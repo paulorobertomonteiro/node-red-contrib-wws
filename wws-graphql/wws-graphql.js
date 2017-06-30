@@ -42,7 +42,8 @@ module.exports = function(RED) {
       method: "POST",
       uri: uri,
       headers: {
-        Authorization: "Bearer " + accessToken
+        Authorization: "Bearer " + accessToken,
+        "X-GRAPHQL-VIEW":"PUBLIC,BETA"
       },
       json: true,
       body: {
